@@ -1,0 +1,34 @@
+a b c A B C S p R
+a b c > C
+3
+a = 3
+b = 5
+c = 7
+a b c > p
+p = (a + b + c)/2
+p a b c > S
+S = SQRT(p*(p-a)*(p-b)*(p-c))
+a A b > B
+B = ASIN((b * SIN(A))/a)
+b B a > A
+A = ASIN((a * SIN(B))/b)
+c C b > B
+B = ASIN((b * SIN(C))/c)
+a b C > c
+c = SQRT(a^2 + b^2 - 2*a*b*COS(C))
+b c A > a
+a = SQRT(b^2 + c^2 - 2*b*c*COS(A))
+c a B > b
+b = SQRT(a^2 + c^2 - 2*a*c*COS(B))
+A B > C
+C = PI - A - B
+A C > B
+B = PI - A - C
+B C > A
+A = PI - B - C
+S a b c > R
+R = a*b*c/(4*S)
+a R > A
+A = ASIN(a/(2*R))
+b R > B
+B = ASIN(b/(2*R))
